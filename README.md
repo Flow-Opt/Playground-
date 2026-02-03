@@ -13,7 +13,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Usage
+## Usage (CLI)
 
 ```bash
 python -m site_audit https://example.com
@@ -25,6 +25,21 @@ Outputs:
 - Human-readable summary
 - `--json` to print JSON
 - `--out report.json` to write JSON to a file
+
+## Usage (GUI)
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Then open the local URL shown (usually http://localhost:8501).
+
+Optional (after `pip install -e .`):
+
+```bash
+site-audit-gui
+```
 
 ## What it checks (MVP)
 
